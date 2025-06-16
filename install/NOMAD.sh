@@ -1,4 +1,8 @@
 #!/bin/sh
+#
+# This follows the instructions in Hashicorp's "Install Nomad"
+#  https://developer.hashicorp.com/nomad/docs/install
+#
 
 # Install required packages.
 sudo apt-get update && \
