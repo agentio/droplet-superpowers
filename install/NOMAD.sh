@@ -6,7 +6,7 @@
 
 # Install required packages.
 sudo apt-get update && \
-  sudo apt-get install wget gpg coreutils
+  sudo apt-get install wget gpg coreutils -y
 
 # Add the Hashicorp GPG key.
 wget -O- https://apt.releases.hashicorp.com/gpg | \
@@ -17,5 +17,5 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 | sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 # Update and install Nomad.
-sudo apt-get update && sudo apt-get install nomad
+sudo apt-get update && sudo apt-get install nomad -y
 
